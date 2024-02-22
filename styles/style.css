@@ -75,7 +75,7 @@ ol {
 
 .search-form {
   display: grid;
-  grid-template-columns:repeat(3, 1fr);
+  grid-template-columns:repeat(3, auto);
   column-gap: 40px;
   justify-content: start;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -87,7 +87,7 @@ ol {
 }
 
 .search-form__fieldset {
-  width: 225px; 
+  width: fit-content; 
 }
 
 .search-form__fieldset-title {
@@ -151,9 +151,9 @@ button:active {
   letter-spacing: 0em;
   text-align: left;
   background-color: transparent;
-  border-top: 1px solid currentColor;
-  border-bottom: 1px solid currentColor;
-  width: 100%;
+  border: solid currentColor;
+  border-width: 1px 0 1px 0;
+  width: 225px;
   appearance: none;
   color: #fff;
 }
@@ -205,7 +205,7 @@ input {
 }
 
 .search-form__submit-button {
-  width: 100%;
+  width: 194px;
   height: 34px;
   margin-top: 20px;
 }
@@ -241,7 +241,7 @@ input {
   grid-template-rows: auto;
 }
 
-li:not(:last-child) {
+.content__list-item:not(:last-child) {
   padding-bottom: 30px;
 }
 
